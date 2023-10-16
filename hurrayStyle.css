@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Roboto:wght@300;500&display=swap');
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(137, 193, 94, 1);
+    display: flex;
+}
+
+#leftSection{
+    width:70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#starsImg{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 10%;
+    right: 2%
+}
+
+#trophyImg{
+    width: 20%;
+    height: 30%;
+    position: relative;
+    bottom: 20%;
+    right: 18%;
+}
+
+#greet{
+    position: relative;
+    bottom: 15%;
+    right: 10%;
+    font-family: Roboto;
+    font-size: 5vw;
+    letter-spacing: 8px;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* end result */
+#finalResult{
+    position: relative;
+    bottom: 14%;
+    right: 11%;
+    font-family: Roboto;
+    font-size: 2vw;
+    letter-spacing: 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* playAgain button */
+#playAgainButton{
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 5px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    position: relative;
+    bottom: 10%;
+    right: 22%;
+}
+
+#playAgainButton a{
+    font-family: Roboto;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    color:rgba(107,107,107,1);
+    text-decoration: none;
+}
+
+
+#rightSection{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* rules box */
+#rulesbox{
+width: 80% ;
+height: 50%;
+position: relative;
+bottom: 10%;
+border: 4px solid rgba(255, 255, 255, 1);
+border-radius: 10px;
+background-color: rgba(0,68,41,1);
+display: none;
+}
+
+/* cross symbol to close rules */
+#crossSymbol{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,0,0,1);
+    border: 5px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 92%;
+    bottom: 8%;
+    cursor: pointer;
+}
+
+#crossSymbol:hover{
+    background-color: rgb(157, 29, 29);
+}
+
+#symbol{
+    font-family: Roboto;
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* rules list heading */
+ul h4{
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    bottom: 20px;
+    font-family: Roboto;
+    font-size: 2vw;
+}
+
+/* rules list */
+ul li{
+color: rgba(255, 255, 255, 1);
+list-style: none;
+font-family: Roboto;
+font-size: 1.25vw;
+position: relative;
+bottom: 10px;
+}
+
+ul li::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255,214,0,1);
+    display: inline-block;
+    margin-left: 10px;
+}
+/* rules button */
+#rulesButton{
+    width: 150px;
+    height: 50px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(137, 193, 94, 1);
+    border: 5px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    font-family: Roboto;
+    font-size: 1.5vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 5%;
+    left: 10%;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+#rulesButton:hover{
+    background-color: lightseagreen;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- left section -->
+    <div id="containerleft">
+
+        <!-- top section in left section -->
+        <div id="containertop">
+
+            <!-- contains title and score cards -->
+            <div id="display">
+
+                <!-- title of the game. -->
+                <div id="title">
+                    <p>ROCK <br> PAPER <br> SCISSORS</p>
+                </div>
+
+                <!-- scorecards of the game. -->
+                <div class="scoreCards">
+                    <div id="computerScore">
+                        <p>COMPUTER </p>
+                        <P> SCORE</p>
+                        <p id="computerScoreDisplay">0</p>
+                    </div>
+
+                    <div id="userScore">
+                        <p>YOUR</p>
+                        <p>SCORE</p>
+                        <p id="userScoreDisplay">0</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- bottom section in left section -->
+        <div id="containerbottom">
+
+            <!-- creating design to place options -->
+            <div id="triangle">
+                <div id="outerTriangle">
+                    <div id="innerTriangle"></div>
+                </div>
+            </div>
+
+            <!-- rock option -->
+            <div id="rock" class="choiceProp">
+                <div id="selectRock">
+                    <img id="rockimg" src="rock.png">
+                </div>
+            </div>
+
+            <!-- scissor option -->
+            <div id="scissor" class="choiceProp">
+                <div id="selectScissor">
+                    <img id="scissorimg" src="scissor.png">
+                </div>
+            </div>
+
+            <!-- paper option -->
+            <div id="paper" class="choiceProp">
+                <div id="selectPaper">
+                    <img id="paperimg" src="paper.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- container for showing the result of the game -->
+        <div id="resultContainer">
+            <!-- division holding userSelection, resultMessage and computerSelection -->
+            <div id="displayBox">
+                <!-- division for user selection and animation -->
+                <div id="userChoiceContainer">
+                    <div id="userCircle1" class="userCircles"></div>
+                    <div id="userCircle2" class="userCircles"></div>
+                    <div id="userCircle3" class="userCircles"></div>
+                    <div id="userChoice">
+                        <img id="user-img" src="" alt="">
+                    </div>
+                </div>
+
+                <!-- containing resultMessage and button for playing again -->
+                <div id="gameResultContainer">
+                    <h1 id="result" class="result"></h1>
+                    <p id="resultOn" class="result"></p>
+                    <button id="playAgainButton">PLAY AGAIN</button>
+                </div>
+
+                <!-- division for computer selection and animation -->
+                <div id="pcChoiceContainer">
+                    <div id="pc-circle1" class="pcCircles"></div>
+                    <div id="pc-circle2" class="pcCircles"></div>
+                    <div id="pc-circle3" class="pcCircles"></div>
+                    <div id="pcChoice">
+                        <img id="pc-img" src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- right section  -->
+    <div id="containerRight">
+        <!-- rules of the game -->
+        <div id="rulesbox">
+            <!-- to close the rules -->
+            <div id="crossSymbol">
+                <p id="symbol">X</p>
+            </div>
+            <!-- rules list -->
+            <ul>
+                <h4>GAME RULES</h4>
+                <li> Rock beats scissors, scissors beat <br> &nbsp; &nbsp; paper, and paper beats rock.</li>
+                <li> Agree ahead of time whether you’ll <br> &nbsp; &nbsp;count off “rock, paper, scissors,<br> &nbsp;
+                    &nbsp;shoot” or just “rock, scissors.”</li>
+                <li> Use rock, paper, scissors to settle <br>&nbsp;&nbsp;&nbsp;minor decisions or simply play to
+                    <br>&nbsp; &nbsp;pass the time
+                </li>
+                <li> If both players lay down the <br>&nbsp;&nbsp; same hand,each player lays down <br>&nbsp;&nbsp;
+                    another hand</li>
+            </ul>
+        </div>
+
+        <!-- button for displaying rules and navigating to final page -->
+        <div id="buttons">
+            <button id="rulesButton">RULES</button>
+            <button id="nextButton"><a href="hurray.html">NEXT</a></button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

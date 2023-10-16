@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONGRATULATIONS</title>
+    <link rel="stylesheet" href="hurrayStyle.css">
+</head>
+<body>
+    <!-- Left Section -->
+    <div id="leftSection">
+        <img id="starsImg" src="stars.png" alt="">
+        <img id="trophyImg" src="trophy.png" alt="">
+        <h1 id="greet">HURRAY!!</h1>
+        <h3 id="finalResult">YOU WON THE GAME</h3>
+        <button id="playAgainButton"><a href="index.html">PLAY AGAIN</a></button>
+    </div>
+    <!--Right section  -->
+    <div id="rightSection">
+        
+        <!-- rules box containing list of rules -->
+        <div id="rulesbox">
+
+            <!-- cross symbol to close rules -->
+            <div id="crossSymbol">
+                <p id="symbol">X</p>
+            </div>
+
+            <!-- Rules list -->
+            <ul>
+                <h4>GAME RULES</h4>
+                <li> &nbsp;Rock beats scissors, scissors beat <br> &nbsp; &nbsp;&nbsp;&nbsp; paper, and paper beats rock.</li>
+                <li> &nbsp;Agree ahead of time whether you’ll <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count off “rock, paper, scissors,<br> &nbsp;
+                    &nbsp;&nbsp;&nbsp;shoot” or just “rock, scissors.”</li>
+                <li> &nbsp;Use rock, paper, scissors to settle <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minor decisions or simply play to
+                    <br>&nbsp; &nbsp; &nbsp;pass the time
+                </li>
+                <li> &nbsp;If both players lay down the <br>&nbsp;&nbsp;&nbsp;&nbsp; same hand,each player lays down <br>&nbsp;&nbsp;
+                    &nbsp;&nbsp;another hand</li>
+            </ul>
+
+        </div>
+        <!-- Rules button -->
+        <button id="rulesButton">RULES</button>
+    </div>
+    
+   <script>
+    let rulesBox = document.getElementById('rulesbox')
+    let rulesButton = document.getElementById('rulesButton')
+    let crossSymbol = document.getElementById('crossSymbol')
+    
+    // displays rules
+    rulesButton.onclick =()=>{
+         rulesBox.style.display = 'block'
+    }
+    
+    // closes rules
+    crossSymbol.onclick =()=>{
+        rulesBox.style.display = 'none'
+    }
+
+   </script>
+</body>
+</html>

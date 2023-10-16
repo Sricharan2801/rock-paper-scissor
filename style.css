@@ -1,0 +1,514 @@
+/* Importing roboto font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Roboto:wght@300;500&display=swap');
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgba(140, 196, 97, 1);
+    display: flex;
+}
+
+/* container for title,scoreCards and options to select  */
+#containerleft{
+    width: 70%;
+    height: 100vh;
+}
+
+/* container for title and scorecards */
+#containertop{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* area which holds the title and scorecards */
+#display{
+    width: 80%;
+    height: 70% ;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+}
+
+/* title of the game */
+#title{
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-family: Roboto;
+    font-size: 2.25vw;
+    line-height: 50px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+/* user and computer score cards */
+.scoreCards{
+    width: 50%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* computer score */
+#computerScore{
+    width: 40%;
+    height: 80%;
+    background-color: white;
+    border-radius: 5px;
+    color: rgba(101,101,101,1);
+    font-family: Roboto;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;;
+}
+
+/* user score */
+#userScore{
+    width: 40%;
+    height: 80%;
+    background-color:white;
+    border-radius: 5px;
+    color: rgba(101,101,101,1);
+    font-family: Roboto;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+/* displays computer score */
+#computerScoreDisplay{
+    font-family: Roboto;
+    font-size: 4vw;
+}
+
+/* displays user score */
+#userScoreDisplay{
+    font-family: Roboto;
+    font-size: 4vw;
+}
+
+/* container contains the options of the game */
+#containerbottom{
+    width: 100%;
+    height: 70vh;
+}
+
+/* design for placing the options */
+#triangle{
+    position: relative;
+    left: 30%;
+    top: 30%;
+}
+
+/* used to create the design */
+#outerTriangle{
+    width: 0;
+    height: 0;
+    border-left: 230px solid transparent;
+    border-right: 230px solid transparent;
+    border-top: 230px solid rgba(0,0,0,0.64);
+ }
+ 
+/* used to create the design */
+ #innerTriangle{
+     position: relative;
+     top: -218px;
+     right: 200px;
+     width: 0;
+     height: 0;
+     border-left: 200px solid transparent;
+     border-right: 200px solid transparent;
+     border-top: 200px solid  rgba(140, 196, 97, 1);
+ 
+ }
+
+/* option of the game */
+#rock{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0,116,182,1);
+    border: 16px solid rgba(0,116,182,1) ;
+    border-radius: 50%;
+    position: relative;
+    top:-110px ;
+    left:310px;
+ }
+
+ #selectRock{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255,255,255,1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ }
+
+/* option of the game */
+ #scissor{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(189,0,255,1);
+    border: 16px solid rgba(189,0,255,1);
+    border-radius: 50%;
+    position: relative;
+    top:-220px;
+    left:710px;
+    rotate: 10deg; 
+ }
+
+ #selectScissor{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255,255,255,1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+ }
+
+/* option of the game */
+ #paper{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255,169,1,1);
+    border: 16px solid rgba(255,169,1,1);
+    border-radius: 50%;
+    position: relative;
+    top:-140px;
+    left:510px;
+ }
+
+#selectPaper{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255,255,255,1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* container contains rules buton and rules box */
+#containerRight{
+    width: 30%;
+    height: 100vh;
+}
+
+/* displays rules of the game */
+#rulesbox{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    visibility: hidden;
+}
+
+/* for closing the rules */
+#crossSymbol{
+    width: 50px;
+    height: 50px;
+    border: 7px solid rgba(255,255,255,1);
+    border-radius: 50%;
+    background-color: rgba(255,0,0,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 87%;
+    top: 20px;
+    cursor: pointer;
+}
+
+#crossSymbol:hover{
+    background-color: rgb(157, 29, 29);
+}
+
+#crossSymbol #symbol{
+    color: rgba(255,255,255,1);
+    font-family: Roboto;
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+/* rules list */
+#rulesbox ul{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0,68,41,1);
+    border: 7px solid rgba(255,255,255,1);
+    border-radius: 13px;
+    list-style: none;
+    font-family: Roboto;
+    font-size: 1.25vw;
+    padding-left: 10px;
+    line-height: 30px;
+
+}
+
+/* heading */
+#rulesbox h4{
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* for providing box before list */
+#rulesbox li::before{
+    content: '';
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background-color: rgba(255, 214, 0, 1);
+}
+
+/* contains rules and next button */
+#buttons{
+    position: relative;
+    top: 28%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* button to display the rules of the game */
+#rulesButton{
+    width: 25%;
+    height: 6vh;
+    background-color: rgba(140, 196, 97, 1);
+    color: rgba(255,255,255,1);
+    font-size: 1.5vw;
+    border: 4px solid white;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-weight: 600;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+#rulesButton:hover{
+    background-color: lightseagreen;
+}
+
+/* button to navigate to hurray page */
+#nextButton{
+    width: 25%;
+    height: 6vh;
+    background-color: rgba(140, 196, 97, 1);
+    font-size: 1.5vw;
+    border: 4px solid white;
+    border-radius: 8px;
+    display: none;
+    cursor: pointer;
+}
+
+#nextButton:hover{
+    background-color: lightseagreen;
+}
+
+#nextButton a{
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    font-family: Roboto;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+/* contains user selection ,result and computer selection*/
+#resultContainer{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background-color: rgba(140, 196, 97, 1);
+    display: none;
+}
+
+#displayBox{
+    width: 80%;
+    height: 60%;
+    background-color: rgba(140, 196, 97, 1);
+    position: relative;
+    left: 15%;
+    top: 25%;
+    display: flex;
+}
+/* displays user selected option */
+#userChoiceContainer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#userChoice{
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+/* circles for creating the animation when user wins */
+.userCircles{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+#userCircle1{
+    animation-delay: 0s;
+}
+
+#userCircle2{
+    animation-delay: 1s;
+}
+
+#userCircle3{
+    animation-delay: 2s;
+}
+
+@keyframes pulse {
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    
+    50%{
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+
+    100%{
+        opacity: 0.75;
+        transform: scale(2);
+    }
+    
+}
+
+/* displays result of the game */
+#gameResultContainer{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.result{
+    font-family: Roboto;
+    color: white;
+    font-weight: 600;
+}
+
+#result{
+    font-size: 4vw;
+}
+
+#resultOn{
+    font-size: 2vw;
+    margin-top: 10px;
+}
+
+/* playAgain button */
+#playAgainButton{
+    width: 150px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 5px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    margin-top: 15px;
+    color: rgba(107, 107, 107, 1);
+    font-family: Roboto;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+#playAgainButton:hover{
+    background-color: lightseagreen;
+}
+
+#pcChoiceContainer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pcChoice{
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+/* circles for creating the animation when user wins */
+.pcCircles{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+    animation: pulse 3s ease-in-out infinite;
+    
+}
+
+#pc-circle1{
+    animation-delay: 0s;
+}
+
+#pc-circle2{
+    animation-delay: 1s;
+}
+
+#pc-circle3{
+    animation-delay: 2s;
+}
+
+@keyframes pulse {
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    
+    50%{
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+
+    100%{
+        opacity: 0.75;
+        transform: scale(2);
+    }
+    
+}
