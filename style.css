@@ -144,7 +144,7 @@ body{
     border: 16px solid rgba(0,116,182,1) ;
     border-radius: 50%;
     position: relative;
-    top:-110px ;
+    top:-150px ;
     left:250px;
  }
 
@@ -167,7 +167,7 @@ body{
     border: 16px solid rgba(189,0,255,1);
     border-radius: 50%;
     position: relative;
-    top:-220px;
+    top:-250px;
     left:650px;
     rotate: 10deg; 
  }
@@ -191,8 +191,8 @@ body{
     border: 16px solid rgba(255,169,1,1);
     border-radius: 50%;
     position: relative;
-    top:-50px;
-    left:450px;
+    top:-200px;
+    left:420px;
  }
 
 #selectPaper{
