@@ -167,7 +167,7 @@ body{
     border: 16px solid rgba(189,0,255,1);
     border-radius: 50%;
     position: relative;
-    top:-300px;
+    top:-270px;
     left:650px;
     rotate: 10deg; 
  }
@@ -220,15 +220,15 @@ body{
     align-items: flex-start;
     justify-content: flex-end;
     position: relative;
-    top: 0%;
+    top: 10%;
     left: 10%;
     visibility: hidden;
 }
 
 /* for closing the rules */
 #crossSymbol{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border: 7px solid rgba(255,255,255,1);
     border-radius: 50%;
     background-color: rgba(255,0,0,1);
@@ -236,8 +236,8 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 85%;
-    top: 10px;
+    left: 80%;
+    top: 12px;
     cursor: pointer;
 }
 
