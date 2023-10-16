@@ -144,8 +144,8 @@ body{
     border: 16px solid rgba(0,116,182,1) ;
     border-radius: 50%;
     position: relative;
-    top:-150px ;
-    left:250px;
+    top:-110px ;
+    left:310px;
  }
 
  #selectRock{
@@ -167,8 +167,8 @@ body{
     border: 16px solid rgba(189,0,255,1);
     border-radius: 50%;
     position: relative;
-    top:-270px;
-    left:620px;
+    top:-220px;
+    left:710px;
     rotate: 10deg; 
  }
 
@@ -191,8 +191,8 @@ body{
     border: 16px solid rgba(255,169,1,1);
     border-radius: 50%;
     position: relative;
-    top:-200px;
-    left:420px;
+    top:-140px;
+    left:510px;
  }
 
 #selectPaper{
@@ -220,7 +220,7 @@ body{
     align-items: flex-start;
     justify-content: flex-end;
     position: relative;
-    top: 5%;
+    top: 20%;
     left: 10%;
     visibility: hidden;
 }
@@ -237,7 +237,7 @@ body{
     align-items: center;
     position: relative;
     left: 87%;
-    top: 8px;
+    top: 20px;
     cursor: pointer;
 }
 
@@ -284,7 +284,7 @@ body{
 /* contains rules and next button */
 #buttons{
     position: relative;
-    top: 10%;
+    top: 28%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -302,7 +302,6 @@ body{
     font-weight: 600;
     letter-spacing: 4px;
     cursor: pointer;
-    position: relative;
 }
 
 #rulesButton:hover{
