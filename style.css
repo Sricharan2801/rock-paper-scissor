@@ -220,7 +220,7 @@ body{
     align-items: flex-start;
     justify-content: flex-end;
     position: relative;
-    top: 10%;
+    top: 5%;
     left: 10%;
     visibility: hidden;
 }
