@@ -220,7 +220,7 @@ body{
     align-items: flex-start;
     justify-content: flex-end;
     position: relative;
-    top: 20%;
+    top: 5%;
     left: 10%;
     visibility: hidden;
 }
@@ -237,7 +237,7 @@ body{
     align-items: center;
     position: relative;
     left: 87%;
-    top: 20px;
+    top: 5px;
     cursor: pointer;
 }
 
