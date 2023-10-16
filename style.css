@@ -145,7 +145,7 @@ body{
     border-radius: 50%;
     position: relative;
     top:-110px ;
-    left:280px;
+    left:250px;
  }
 
  #selectRock{
@@ -168,7 +168,7 @@ body{
     border-radius: 50%;
     position: relative;
     top:-220px;
-    left:680px;
+    left:650px;
     rotate: 10deg; 
  }
 
@@ -191,8 +191,8 @@ body{
     border: 16px solid rgba(255,169,1,1);
     border-radius: 50%;
     position: relative;
-    top:-110px;
-    left:480px;
+    top:-50px;
+    left:450px;
  }
 
 #selectPaper{
