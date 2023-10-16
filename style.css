@@ -167,8 +167,8 @@ body{
     border: 16px solid rgba(189,0,255,1);
     border-radius: 50%;
     position: relative;
-    top:-250px;
-    left:650px;
+    top:-270px;
+    left:620px;
     rotate: 10deg; 
  }
 
@@ -302,6 +302,7 @@ body{
     font-weight: 600;
     letter-spacing: 4px;
     cursor: pointer;
+    position: relative;
 }
 
 #rulesButton:hover{
