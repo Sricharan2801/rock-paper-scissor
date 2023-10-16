@@ -284,7 +284,7 @@ body{
 /* contains rules and next button */
 #buttons{
     position: relative;
-    top: 20%;
+    top: 10%;
     display: flex;
     justify-content: space-evenly;
 }
